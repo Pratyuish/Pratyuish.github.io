@@ -1,5 +1,5 @@
-# Pratyuish.github.io
-# PratyuishKiran# Hi, I'm Pratyuish Kiran 👋
+
+Hi, I'm Pratyuish Kiran 👋
 
 Technology & DevOps Leader
 
@@ -150,6 +150,6 @@ Sathyabama University
 
 ## Connect
 
-LinkedIn https://www.linkedin.com/in/pratyuishkiran/
-Email pratyuish.kiran@hotmail.com
-Portfolio
+LinkedIn -> https://www.linkedin.com/in/pratyuishkiran/
+
+Email -> pratyuish.kiran@hotmail.com
