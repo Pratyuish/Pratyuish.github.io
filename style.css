@@ -1,0 +1,221 @@
+/* Core Styling Rules & Variables */
+:root {
+    --bg-main: #f8fafc;
+    --bg-card: #ffffff;
+    --text-dark: #0f172a;
+    --text-muted: #64748b;
+    --accent: #2563eb;
+    --accent-light: #eff6ff;
+    --border-color: #e2e8f0;
+    --font-stack: 'Inter', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-stack);
+    background-color: var(--bg-main);
+    color: var(--text-dark);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Two-Column CSS Grid Architecture */
+.portfolio-wrapper {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    min-height: 100vh;
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: var(--bg-card);
+    box-shadow: 0 0 40px rgba(0,0,0,0.03);
+}
+
+/* Sidebar Styling Details */
+.profile-sidebar {
+    background-color: #f1f5f9;
+    border-right: 1px solid var(--border-color);
+    padding: 60px 40px;
+}
+
+.sidebar-sticky {
+    position: sticky;
+    top: 60px;
+}
+
+.avatar-placeholder {
+    width: 80px;
+    height: 80px;
+    background-color: var(--accent);
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    margin-bottom: 24px;
+}
+
+.profile-name {
+    font-size: 1.75rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 4px;
+}
+
+.profile-tagline {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+.sidebar-divider {
+    border: none;
+    border-top: 1px solid var(--border-color);
+    margin: 30px 0;
+}
+
+/* Contact List Grid */
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-item .label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--text-muted);
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.contact-item .val, .contact-item .val a {
+    font-size: 0.9rem;
+    color: var(--text-dark);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-item .val a:hover {
+    color: var(--accent);
+}
+
+/* Skill Tags Pill Design */
+.skills-widget h3 {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+}
+
+.tag-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #475569;
+}
+
+/* Main Content Styling Details */
+.main-content {
+    padding: 60px 80px;
+    max-width: 900px;
+}
+
+.content-block {
+    margin-bottom: 50px;
+}
+
+.section-title {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-muted);
+    margin-bottom: 24px;
+    font-weight: 700;
+}
+
+.bio-text {
+    font-size: 1.1rem;
+    color: #334155;
+}
+
+/* Timeline Layout Architecture */
+.timeline-item {
+    margin-bottom: 32px;
+}
+
+.timeline-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 4px;
+}
+
+.role {
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+.timeline-date {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+.company-name {
+    font-size: 0.95rem;
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.bullet-points {
+    list-style-type: square;
+    padding-left: 20px;
+    color: #334155;
+}
+
+.bullet-points li {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+/* Fluid Mobile Layout Query */
+@media (max-width: 850px) {
+    .portfolio-wrapper {
+        grid-template-columns: 1fr;
+    }
+    .profile-sidebar {
+        padding: 40px;
+        border-right: none;
+        border-bottom: 1px solid var(--border-color);
+    }
+    .sidebar-sticky {
+        position: static;
+    }
+    .main-content {
+        padding: 40px;
+    }
+}
