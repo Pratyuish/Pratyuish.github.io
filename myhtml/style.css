@@ -1,0 +1,115 @@
+/* Typography & Reset */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Page Frame Constraints */
+.resume-container {
+    max-width: 800px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Adjustments */
+.resume-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.resume-header h1 {
+    margin: 0 0 5px 0;
+    font-size: 2.5rem;
+    color: #111111;
+}
+
+.job-title {
+    margin: 0 0 15px 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #555555;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.contact-info {
+    font-size: 0.9rem;
+    color: #666666;
+}
+
+/* Dynamic Section Styling */
+.resume-section {
+    margin-bottom: 25px;
+}
+
+.resume-section h2 {
+    font-size: 1.4rem;
+    color: #222222;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #dddddd;
+    margin-bottom: 15px;
+}
+
+/* Timeline Layouts */
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-header h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #333333;
+}
+
+.date {
+    font-size: 0.9rem;
+    color: #777777;
+    font-style: italic;
+}
+
+.company, .school {
+    margin: 2px 0 10px 0;
+    font-weight: bold;
+    color: #555555;
+}
+
+ul {
+    margin: 0 0 15px 0;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+.skills-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* Print Optimization Rule */
+@media print {
+    body {
+        background-color: #ffffff;
+    }
+    .resume-container {
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+        max-width: 100%;
+    }
+}
