@@ -1,14 +1,11 @@
 
-Hi, I'm Pratyuish Kiran 👋
+About Me
 
+PRATYUISH KIRAN
 Technology & DevOps Leader
+Platform Engineering • Application Integration • Enterprise Technology • Strategy
 
-## About Me
-
-Technology and DevOps leader with 17+ years of experience
-across Java software engineering, enterprise applications,
-application integration, technical leadership, platform
-operations, CI/CD and client rollouts.
+17+ years of technology experience, combining engineering depth, operational leadership and strategic business perspective.
 
 Currently leading Integration Engineering at OpenBet,
 with responsibility for client rollouts, application
