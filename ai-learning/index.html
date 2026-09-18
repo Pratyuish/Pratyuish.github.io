@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Learning | Platform & SRE Leadership</title>
+  <meta name="description" content="Interactive 12-week AI learning roadmap for Platform, SRE, DevOps and Engineering Leadership.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav container">
+      <a class="brand" href="../">PK</a>
+      <div class="navlinks">
+        <a href="#modules">Modules</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#projects">Projects</a>
+        <a href="#interview">Interview Prep</a>
+      </div>
+    </nav>
+    <div class="container hero-grid">
+      <section>
+        <p class="eyebrow">AI + PLATFORM ENGINEERING</p>
+        <h1>Build practical AI skills that strengthen your SRE, DevOps & leadership profile.</h1>
+        <p class="lead">A 12-week hands-on learning path focused on LLMs, RAG, Agents, MCP, AWS Bedrock, LLMOps, security and production AI architecture.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#roadmap">Start the roadmap</a>
+          <a class="btn secondary" href="https://github.com/Pratyuish/PratyuishKiran/tree/main/ai-learning" target="_blank" rel="noreferrer">View source modules</a>
+        </div>
+        <div class="chips">
+          <span>20% Theory</span><span>60% Hands-on</span><span>20% Interview Prep</span>
+        </div>
+      </section>
+      <aside class="score-card">
+        <p class="muted">Learning progress</p>
+        <div class="progress-ring" aria-label="Learning progress">
+          <strong id="progressPercent">0%</strong>
+        </div>
+        <p id="progressText">0 of 12 modules completed</p>
+        <button id="resetProgress" class="text-button" type="button">Reset progress</button>
+      </aside>
+    </div>
+  </header>
+
+  <main>
+    <section id="modules" class="section container">
+      <div class="section-heading">
+        <p class="eyebrow">CORE CURRICULUM</p>
+        <h2>12 AI learning modules</h2>
+        <p>Mark modules complete as you progress. Your completion state is stored in your browser.</p>
+      </div>
+      <div id="moduleGrid" class="module-grid"></div>
+    </section>
+
+    <section id="roadmap" class="section alt">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">12-WEEK PLAN</p>
+          <h2>From foundations to an AI-powered SRE platform</h2>
+        </div>
+        <div id="roadmapGrid" class="roadmap-grid"></div>
+      </div>
+    </section>
+
+    <section id="projects" class="section container">
+      <div class="section-heading">
+        <p class="eyebrow">PORTFOLIO</p>
+        <h2>Projects that become resume evidence</h2>
+      </div>
+      <div id="projectGrid" class="project-grid"></div>
+    </section>
+
+    <section id="architecture" class="section alt">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">FLAGSHIP ARCHITECTURE</p>
+          <h2>AI-Powered SRE Operations Platform</h2>
+        </div>
+        <div class="architecture">
+          <div class="arch-node">Engineer<br><small>Web / CLI</small></div>
+          <div class="arrow">↓</div>
+          <div class="arch-node focus">AI SRE Copilot</div>
+          <div class="arch-branches">
+            <div class="arch-node">RAG<br><small>Runbooks & postmortems</small></div>
+            <div class="arch-node">Agents<br><small>Investigation & tool use</small></div>
+            <div class="arch-node">MCP<br><small>Kubernetes / AWS / CI-CD</small></div>
+          </div>
+          <div class="arrow">↓</div>
+          <div class="arch-node">Observability & Governance<br><small>Tracing · Evaluations · Audit · Cost</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="interview" class="section container">
+      <div class="section-heading">
+        <p class="eyebrow">INTERVIEW MODE</p>
+        <h2>Practice senior-level AI system design</h2>
+        <p>Select a question and reveal the answer framework only after thinking through it yourself.</p>
+      </div>
+      <div class="interview-layout">
+        <div id="questionList" class="question-list"></div>
+        <article class="answer-panel">
+          <h3 id="questionTitle">Choose a question</h3>
+          <p id="questionPrompt" class="muted">Select an interview scenario from the left.</p>
+          <button id="revealAnswer" class="btn primary" type="button" disabled>Reveal answer framework</button>
+          <div id="answerContent" class="answer-content" hidden></div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>AI Learning for Platform & SRE Leadership</strong>
+        <p>Build first. Document it. Explain the trade-offs. Then add it to the resume.</p>
+      </div>
+      <a href="https://github.com/Pratyuish/PratyuishKiran/tree/main/ai-learning" target="_blank" rel="noreferrer">GitHub learning repository →</a>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
